@@ -1,0 +1,22 @@
+import * as jQuery from 'jquery';
+import * as bootstrap from 'bootstrap';
+import * as alfnavigator from 'alfnavigator';
+
+export class AppView{
+	/**
+	 * @param args: {controller: AppController}
+	 */
+	constructor(args){
+		this.controller = args.controller;
+		this.$el = jQuery('body');
+		this.initNavBar();		
+	}
+	
+	initNavBar(){
+		this.$el.on('click', '.navbar a[data-content]', event => {
+			var $target = jQuery(event.target);			
+			this.controller.handleMenuItemClicked($target.attr('data-content'));				
+			event.preventDefault();
+		});
+	}	
+}

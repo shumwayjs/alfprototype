@@ -1,0 +1,39 @@
+gulp-ref:
+http://www.smashingmagazine.com/2014/06/11/building-with-gulp/
+
+
+- use gulp, 6to5 with amd, less
+
+- use this for front-end components http://getfuelux.com/index.html
+
+
+- setup mocha test for front-end
+
+- if all ready push to github as prototype-project
+
+- read the doc about the algorithm
+
+
+This framework provides maximal freedom in implementing MVC-patterned client-side
+apps.
+A view is a view and a controller a controller, whatever you like to look like, as
+class as function as plain object - I don't care.
+This stuff should be placed underneith pages/
+Implementation can be done in ES6 and is transpiled to ES5.
+The project contains a navigator (alfnavigator) which helps you creating navigatable views.
+For this just create a MVC like analogous to pages/welcome and register the navigation-target
+as in AppController.js done.
+In case you want to read the source-code a served to the browser, the gulp-task's destination
+is in build/
+When starting the server via gulp, gulp is running the app.js in a spawned-child process.
+In this app.js you can either build you backend directly when it is running in node or otherwise
+you can configer the proxy in there for your needs to delegate certain url patterns through the
+proxy to your backend server.
+
+
+Install:
+>npm install
+>bower install
+
+ To run the server and gulp watcher:
+ >gulp

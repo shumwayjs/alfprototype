@@ -1,0 +1,7 @@
+.externalToolBuilders
+.project
+.settings
+bin
+build
+node_modules
+public/libs
