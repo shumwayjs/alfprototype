@@ -18,7 +18,6 @@ gulp.task('js', function () {
 
 gulp.task('test-src', function () {
 	gulp.src('public/test/**/*.js')
-	.pipe(to5({modules: 'amd'}))
 	.pipe(gulp.dest('build/test'));
 });
 
@@ -45,6 +44,7 @@ gulp.task('build', function(callback){
 			'libs',
 			'html',
 			'less',
+			'test-src',
 			callback
 	);
 });

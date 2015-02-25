@@ -3,12 +3,16 @@ import * as alfnavigator from 'alfnavigator';
 
 export class WelcomeController extends alfnavigator.BaseContentController{
 	constructor(){
-		super();		
+		super();
 	}
-	
+
 	init(callback){
-		this.model = {name: 'User'};		
+		this.model = {name: 'User'};
 		this.view = new WelcomeView({controller: this});
 		callback();
+	}
+
+	testme(){
+		return 'tested';
 	}
 }

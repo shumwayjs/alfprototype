@@ -2,16 +2,12 @@ gulp-ref:
 http://www.smashingmagazine.com/2014/06/11/building-with-gulp/
 
 
-- use gulp, 6to5 with amd, less
+- using gulp, 6to5 with amd, less
+- for testing, using mocha, chai, sinon
 
-- use this for front-end components http://getfuelux.com/index.html
+- using this for front-end components http://getfuelux.com/index.html
 
-
-- setup mocha test for front-end
-
-- if all ready push to github as prototype-project
-
-- read the doc about the algorithm
+- remove backbone from alfnavigation and here
 
 
 This framework provides maximal freedom in implementing MVC-patterned client-side
@@ -24,13 +20,16 @@ do so.
 The project contains a navigator (alfnavigator) which helps you creating navigatable views.
 For this just create a MVC like analogous to pages/welcome and register the navigation-target
 as in AppController.js done.
-In case you want to read the source-code a served to the browser, the gulp-task's destination
+In case you want to read the source-code as served to the browser, the gulp-task's destination
 is in build/
 When starting the server via gulp, gulp is running the app.js in a spawned-child process.
 In this app.js you can either build you backend directly when it is running in node or otherwise
 you can configer the proxy in there for your needs to delegate certain url patterns through the
 proxy to your backend server.
 
+Testing:
+The folder to store all tests is public/test
+Test can be run by navigating the browser to pages/test.html
 
 Install:
 >npm install

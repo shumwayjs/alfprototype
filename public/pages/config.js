@@ -12,7 +12,8 @@ require.config({
     	    'parsequery': '../libs/parsequery/index',
     	   'async':'../libs/async/lib/async',
     	   'css': '../libs/require-css/css',
-    	   'text': '../libs/text/text'
+    	   'text': '../libs/text/text',
+         'q': '../libs/q/q'
     },
     shim:{
     	'bootstrap':{
