@@ -5,7 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var routes = require('./routes/index');
+var routes = require('./routes/test');
 var users = require('./routes/users');
 
 var app = express();
@@ -44,7 +44,6 @@ app.all('/webrouter/*', function(req, res){
 //catch 404 and forward to error handler
 app.use(function(req, res, next) {
 	var err = new Error('Not Found');
-	console.log('here');
 	err.status = 404;
 	next(err);
 });

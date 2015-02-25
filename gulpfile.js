@@ -16,6 +16,12 @@ gulp.task('js', function () {
 	.pipe(gulp.dest('build/pages'));
 });
 
+gulp.task('test-src', function () {
+	gulp.src('public/test/**/*.js')
+	.pipe(to5({modules: 'amd'}))
+	.pipe(gulp.dest('build/test'));
+});
+
 gulp.task('libs', function(){
 	gulp.src(mainBowerFiles({paths: {
         bowerDirectory: 'public/libs',
@@ -25,6 +31,9 @@ gulp.task('libs', function(){
     .pipe(gulp.dest("build/libs"));
 
 	gulp.src('public/libs/**/animo.js')
+	.pipe(gulp.dest('build/libs'));
+
+	gulp.src('public/libs/sinon-1.12.2/index.js')
 	.pipe(gulp.dest('build/libs'));
 });
 

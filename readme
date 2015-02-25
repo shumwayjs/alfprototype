@@ -19,7 +19,8 @@ apps.
 A view is a view and a controller a controller, whatever you like to look like, as
 class as function as plain object - I don't care.
 This stuff should be placed underneith pages/
-Implementation can be done in ES6 and is transpiled to ES5.
+Implementation can be done in ES6 and is transpiled to ES5. But you are not forced to
+do so.
 The project contains a navigator (alfnavigator) which helps you creating navigatable views.
 For this just create a MVC like analogous to pages/welcome and register the navigation-target
 as in AppController.js done.
