@@ -10,7 +10,8 @@ export class AppController {
 									{welcome: 'welcome/WelcomeController',
 									 database: 'database/DatabaseController'},
 			          defaultContent: 'welcome',
-			          targetContent:'.content-container'
+			          targetContent:'.content-container',
+			          animate: true
 			        });
 		this.navigator = alfnavigator;
 	}
