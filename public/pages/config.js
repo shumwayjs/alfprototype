@@ -5,7 +5,7 @@ require.config({
     	'bootstrap':'../libs/bootstrap/dist/js/bootstrap',
     	'backbone': '../libs/backbone/backbone',
     	'underscore': '../libs/underscore/underscore',
-    	'alfnavigator': '../libs/alfnavigator/alfnavigator',
+    	'alfnavigator': '../libs/alfnavigator/target/alfnavigator',
     		'async': '../libs/lib/async',
     	    'animojs': '../libs/animo.js/animo',
     	    'animate': '../libs/animate.css/animate',
