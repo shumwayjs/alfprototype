@@ -7,9 +7,6 @@ http://www.smashingmagazine.com/2014/06/11/building-with-gulp/
 
 - using this for front-end components http://getfuelux.com/index.html
 
-- remove backbone from alfnavigation and here
-
-
 This framework provides maximal freedom in implementing MVC-patterned client-side
 apps.
 A view is a view and a controller a controller, whatever you like to look like, as
