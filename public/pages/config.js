@@ -3,6 +3,7 @@ require.config({
     paths: {
     	'jquery':'../libs/jquery/dist/jquery',
     	'bootstrap':'../libs/bootstrap/dist/js/bootstrap',
+      'bootstrapCss': '../libs/bootstrap/dist/css/bootstrap',
     	'backbone': '../libs/backbone/backbone',
     	'underscore': '../libs/underscore/underscore',
     	'alfnavigator': '../libs/alfnavigator/target/alfnavigator',
