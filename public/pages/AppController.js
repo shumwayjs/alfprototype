@@ -17,6 +17,8 @@ export class AppController {
 	}
 
 	handleMenuItemClicked(content){
-		alfnavigator.navigate(content);
+		alfnavigator.navigate(content).done(null, function(err){
+			throw new Error(err);
+		});
 	}
 }
