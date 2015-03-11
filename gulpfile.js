@@ -32,8 +32,8 @@ gulp.task('libs', function(){
 	gulp.src('public/libs/**/animo.js')
 	.pipe(gulp.dest('build/libs'));
 
-	gulp.src('public/libs/sinon-1.12.2/index.js')
-	.pipe(gulp.dest('build/libs'));
+	gulp.src('public/libs/sinon/lib/**')
+	.pipe(gulp.dest('build/libs/sinon/lib'));
 });
 
 gulp.task('build', function(callback){

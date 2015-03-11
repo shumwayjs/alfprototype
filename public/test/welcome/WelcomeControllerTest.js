@@ -5,7 +5,7 @@ describe("WelcomeController", function() {
   before(function(done){
     // ensure the app and request navigation to obtain
     // reference to test-target
-    require(['app'], function(app){
+    require(['app', 'sinon'], function(app, sinon){
       app.app.navigator.navigate('welcome')
         .then(function(contentController){
           welcomeController = contentController;

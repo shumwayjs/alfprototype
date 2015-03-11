@@ -15,4 +15,8 @@ export class WelcomeController extends alfnavigator.BaseContentController{
 	testme(){
 		return 'tested';
 	}
+	
+	beforeNavigate(){
+		console.log('welcomeController is navigated away ...');
+	}
 }
