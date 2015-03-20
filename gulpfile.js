@@ -8,11 +8,14 @@ runSequence = require('run-sequence'),
 to5 = require('gulp-6to5'),
 mainBowerFiles = require('main-bower-files')
 
-
+function handleError(err){
+	console.error(err);
+}
 
 gulp.task('js', function () {
 	gulp.src('public/pages/**/*.js')
 	.pipe(to5({modules: 'amd'}))
+	.on('error', handleError)
 	.pipe(gulp.dest('build/pages'));
 });
 

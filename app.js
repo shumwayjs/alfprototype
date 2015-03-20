@@ -32,12 +32,17 @@ app.get('/', function (req, res) {
 // proxy requests to backend
 var proxy = require('http-proxy').createProxyServer({
 	target: {
-    host: 'localhost',
-    port: 8080
-  }
-});
+		host: 'localhost',
+		port: 8080
+	},
+	ws: true})
+	.on('error', console.error);
 
 app.all('/webrouter/*', function(req, res){
+	proxy.web(req, res);
+});
+
+app.all('/broadcaster/*', function(req, res){
 	proxy.web(req, res);
 });
 
